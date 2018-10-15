@@ -16,53 +16,85 @@
     <h1>Lipunostosovellus</h1>
 
 
+    <form id="frm1" action="/action_page.php" class="form-control form-control-lg">
+        Syötä nimesi: <input type="text" name="fname" ><br>
+      </form> 
+      <p id="demo">Nimesi:</p>
+
+      <button onclick="myFunction();" id="idd" class="btn btn-primary">Tallenna nimi</button>
+      <br>
+      <br>
+      <br>
+      <button onclick="myFunction1();"  class="btn btn-primary">Sovellukseen</button>
 
 
     <a href="prices.html">Linkki hinnoitteluun</a>
+    <div id="divExample">
+    <div>
     <div>
         <p>Minkä ikäinen olet?</p>
         <select class="form-control form-control-lg">
+            <option selected>Valitse tästä..</option>
             <option>Alle 7v</option>
             <option>7-15v</option>
-            <option selected>Valitse tästä..</option>
+            <option>16-65v</option>
+            
+
 
         </select>
+    
+    </table>
     </div>
     <div>
         <p>Oletko Varusmies?</p>
+        
         <select class="form-control">
             <option selected>Valitse tästä..</option>
             <option>Ei</option>
             <option>Kyllä</option>
         </select>
+    
         <div>
             <p>Oletko Opiskelija?</p>
+           
             <select class="form-control form-control-sm">
+                <option selected>Valitse tästä..</option>
+                <option>Ei</option>
+                <option>Kyllä</option>
+            </select>
+        
+            <div>
+                <p>Oletko mtk-jäsen?</p>
+                
+                <select class="form-control">
                     <option selected>Valitse tästä..</option>
                     <option>Ei</option>
                     <option>Kyllä</option>
-            </select>
-            <div>
-                <p>Oletko mtk-jäsen?</p>
-                <select class="form-control">
-                        <option selected>Valitse tästä..</option>
-                        <option>Ei</option>
-                        <option>Kyllä</option>
                 </select>
             </div>
+            </div>
         </div>
+    </div>
 
-    
-<br>
-            <button id="id" class="btn btn-primary">Laske hinta</button>
+        
 
-            <p>
-                <footer>
-                    <p>Posted by: Antti Karjalainen</p>
-                    <p>Contact information:
-                        <a href="mailto:someone@example.com">antti.karjalainen@student.saimia.fi</a>.</p>
-                </footer>
-            </p>
+
+
+        <br>
+        <button id="id" class="btn btn-primary">Laske hinta</button>
+
+        
+
+   
+        
+
+        <p>
+            <footer>
+                <p>Posted by: Antti Karjalainen</p>
+                <p>Contact information:
+                    <a href="mailto:someone@example.com">antti.karjalainen@student.saimia.fi</a>.</p>
+            </footer>
+        </p>
 </body>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -71,14 +103,14 @@
 <script>
     $(document).ready(function () {
     });
-            $("#id").click(function () {
-                $.getJSON("https://api.myjson.com/bins/luo34", function (result) {
-                    console.log(result);
-                });
-
-
-            
+    $("#id").click(function () {
+        $.getJSON("https://api.myjson.com/bins/luo34", function (result) {
+            console.log(result);
         });
+
+
+
+    });
 </script>
 
 
