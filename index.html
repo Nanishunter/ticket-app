@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="javascript/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Lipunostosovellus</h1>
+
+
+
+
+    <a href="prices.html">Linkki hinnoitteluun</a>
+    <div>
+        <p>Minkä ikäinen olet?</p>
+        <select class="form-control form-control-lg">
+            <option>Alle 7v</option>
+            <option>7-15v</option>
+            <option selected>Valitse tästä..</option>
+
+        </select>
+    </div>
+    <div>
+        <p>Oletko Varusmies?</p>
+        <select class="form-control">
+            <option selected>Valitse tästä..</option>
+            <option>Ei</option>
+            <option>Kyllä</option>
+        </select>
+        <div>
+            <p>Oletko Opiskelija?</p>
+            <select class="form-control form-control-sm">
+                    <option selected>Valitse tästä..</option>
+                    <option>Ei</option>
+                    <option>Kyllä</option>
+            </select>
+            <div>
+                <p>Oletko mtk-jäsen?</p>
+                <select class="form-control">
+                        <option selected>Valitse tästä..</option>
+                        <option>Ei</option>
+                        <option>Kyllä</option>
+                </select>
+            </div>
+        </div>
+
+    
+<br>
+            <button id="id" class="btn btn-primary">Laske hinta</button>
+
+            <p>
+                <footer>
+                    <p>Posted by: Antti Karjalainen</p>
+                    <p>Contact information:
+                        <a href="mailto:someone@example.com">antti.karjalainen@student.saimia.fi</a>.</p>
+                </footer>
+            </p>
+</body>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+    });
+            $("#id").click(function () {
+                $.getJSON("https://api.myjson.com/bins/luo34", function (result) {
+                    console.log(result);
+                });
+
+
+            
+        });
+</script>
+
+
+
+</html>
