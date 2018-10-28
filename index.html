@@ -17,78 +17,82 @@
 
 
     <form id="frm1" action="/action_page.php" class="form-control form-control-lg">
-        Syötä nimesi: <input type="text" name="fname" ><br>
-      </form> 
-      <p id="demo">Nimesi:</p>
-
-      <button onclick="myFunction();" id="idd" class="btn btn-primary">Tallenna nimi</button>
-      <br>
-      <br>
-      <br>
-      <button onclick="myFunction1();"  class="btn btn-primary">Sovellukseen</button>
+        Syötä nimesi: <input type="text" name="fname"><br>
+    </form>
+    <p id="demo">Nimesi:</p>
 
 
+
+    <button onclick="saveName();" id="idd" class="btn btn-primary">Tallenna nimi</button>
+    <br>
+    <br>
+    <br>
+    <button onclick="openApp();" class="btn btn-primary">Sovellukseen</button>
     <a href="prices.html">Linkki hinnoitteluun</a>
     <div id="divExample">
-    <div>
-    <div>
-        <p>Minkä ikäinen olet?</p>
-        <select class="form-control form-control-lg">
-            <option selected>Valitse tästä..</option>
-            <option>Alle 7v</option>
-            <option>7-15v</option>
-            <option>16-65v</option>
-            
-
-
-        </select>
-    
-    </table>
-    </div>
-    <div>
-        <p>Oletko Varusmies?</p>
-        
-        <select class="form-control">
-            <option selected>Valitse tästä..</option>
-            <option>Ei</option>
-            <option>Kyllä</option>
-        </select>
-    
         <div>
-            <p>Oletko Opiskelija?</p>
-           
-            <select class="form-control form-control-sm">
-                <option selected>Valitse tästä..</option>
-                <option>Ei</option>
-                <option>Kyllä</option>
-            </select>
-        
             <div>
-                <p>Oletko mtk-jäsen?</p>
-                
-                <select class="form-control">
-                    <option selected>Valitse tästä..</option>
-                    <option>Ei</option>
-                    <option>Kyllä</option>
+
+                <!-- Kysymykset käyttäjälle -->
+                <p>Minkä ikäinen olet?</p>
+                <select class="form-control form-control-lg">
+                    <option selected value="0">Valitse tästä..</option>
+                    <option value="1">Alle 7v</option>
+                    <option value="2">7-15v</option>
+                    <option value="3">16-65v</option>
+                    
+
+
+
                 </select>
+
+                </table>
             </div>
+            <div>
+                <p>Oletko Varusmies?</p>
+
+                <select class="form-control">
+                    <option selected value="0">Valitse tästä..</option>
+                    <option value="1">Ei</option>
+                    <option value="2">Kyllä</option>
+                </select>
+
+                <div>
+                    <p>Oletko Opiskelija?</p>
+
+                    <select class="form-control form-control-sm">
+                        <option selected value="0">Valitse tästä..</option>
+                        <option value="1">Ei</option>
+                        <option value="2">Kyllä</option>
+                    </select>
+
+                    <div>
+                        <p>Oletko mtk-jäsen?</p>
+
+                        <select class="form-control">
+                            <option selected value="0">Valitse tästä..</option>
+                            <option value="1">Ei</option>
+                            <option value="2">Kyllä</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-        
 
 
 
+
+        <!-- Hinnan laskeminen, nappula -->
         <br>
         <button id="id" class="btn btn-primary">Laske hinta</button>
 
-        
 
-   
-        
+
+
+
 
         <p>
+            <!-- Footer-elementti -->
             <footer>
                 <p>Posted by: Antti Karjalainen</p>
                 <p>Contact information:
@@ -96,11 +100,13 @@
             </footer>
         </p>
 </body>
-
+<!-- Tässä linkit jquery, bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
+
+    // määritellään jsonin hakeminen.   Tässä linkit jquery, bootstrap 
     $(document).ready(function () {
     });
     $("#id").click(function () {
